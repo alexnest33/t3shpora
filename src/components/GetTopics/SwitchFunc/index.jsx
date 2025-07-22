@@ -1,6 +1,8 @@
+import navigation from "../../Navigation";
+
 const SwitchFunc = ({title,content}) => {
 
-   const switchers = (title,content = []) => {
+   const switchers = (content) => {
         return content.map(item => {
             const [[tag,text]] = Object.entries(item);
             switch(tag){
@@ -25,3 +27,6 @@ const SwitchFunc = ({title,content}) => {
     )
 
 }
+
+
+export default SwitchFunc

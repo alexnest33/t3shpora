@@ -1,5 +1,6 @@
-import { Routes, Route, NavLink } from "react-router";
+import { Routes, Route, NavLink, Outlet } from "react-router";
 import navigation from "./components/Navigation";
+import routers from "./components/GetTopics";
 import "./App.css";
 
 function App() {
@@ -10,19 +11,15 @@ function App() {
           {navigation.map((item) => {
             return (
               <NavLink to={item.path} key={item.path}>
-                {item.title} 
+                {item.title}
               </NavLink>
             );
           })}
-        </nav>
+        </nav> 
       </div>
 
       <div className="main">
-        <Routes>
-          {navigation.map((item) => {
-            return <Route path={item.path} element={item.element} />;
-          })}
-        </Routes>
+       
       </div>
     </>
   );
