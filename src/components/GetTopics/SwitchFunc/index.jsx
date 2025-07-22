@@ -1,4 +1,4 @@
-const SwitchFunc = () => {
+const SwitchFunc = ({title,content}) => {
 
    const switchers = (title,content = []) => {
         return content.map(item => {
@@ -18,6 +18,8 @@ const SwitchFunc = () => {
 
     return(
         <>
+<h1>{title}</h1>
+{switchers(content)}
 
         </>
     )
