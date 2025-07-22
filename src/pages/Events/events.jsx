@@ -88,12 +88,12 @@ function HoverExample() {
         </li>
       </ul>
 
-      <h2>💻 Пример: работа с input</h2>
+      <h2>Пример: работа с input</h2>
       <SyntaxHighlighter language="jsx" style={dark}>
         {codeInputExample}
       </SyntaxHighlighter>
 
-      <h2>💻 Пример: событие наведения</h2>
+      <h2> Пример: событие наведения</h2>
       <SyntaxHighlighter language="jsx" style={dark}>
         {codeMouseExample}
       </SyntaxHighlighter>
@@ -154,7 +154,7 @@ function HoverExample() {
         <InlineCode>event.target.value</InlineCode>.
       </p>
 
-      <h2>⚠️ Важные методы события</h2>
+      <h2>Важные методы события</h2>
       <ul>
         <li>
           <InlineCode>preventDefault()</InlineCode> — отменяет поведение по

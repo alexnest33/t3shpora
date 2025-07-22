@@ -85,7 +85,7 @@ return(
       {sessionStorageExample}
     </SyntaxHighlighter>
 
-    <h3>🛠 Как проверить и работать с Web Storage в DevTools</h3>
+    <h3> Как проверить и работать с Web Storage в DevTools</h3>
     <p>
       В Chrome DevTools откройте вкладку <strong>Application</strong> → <strong>Storage</strong> → <strong>Local Storage</strong> или <strong>Session Storage</strong>.  
       Там вы увидите таблицу с ключами и значениями, которые сохраняет ваше приложение.

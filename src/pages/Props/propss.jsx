@@ -55,7 +55,7 @@ function Card(props) {
       </p>
 
       <p>
-        <strong>💡 Пример 1: передача строки как пропса</strong>
+        <strong> Пример 1: передача строки как пропса</strong>
         <SyntaxHighlighter language="jsx" style={dark}>
           {StringCode}
         </SyntaxHighlighter>
