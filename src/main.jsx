@@ -1,14 +1,9 @@
 import { createRoot } from "react-dom/client";
-import { RouterProvider} from "react-router/dom";
-import { createBrowserRouter } from "react-router";
-import "./index.css";
-import App from "./App.jsx";
-import routers from "./components/GetTopics/index.jsx";
+import { RouterProvider } from "react-router/dom";
 
-let router = createBrowserRouter(routers);
+import routers from "./components/GetTopics/index.jsx";
+import "./index.css";
 
 createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router}>
-    <App />
-  </RouterProvider>
+  <RouterProvider router={routers} />,
 );

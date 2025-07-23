@@ -1,6 +1,6 @@
-import { Routes, Route, NavLink, Outlet } from "react-router";
+import { NavLink, Outlet } from "react-router";
 import navigation from "./components/Navigation";
-import routers from "./components/GetTopics";
+
 import "./App.css";
 
 function App() {
@@ -15,11 +15,11 @@ function App() {
               </NavLink>
             );
           })}
-        </nav> 
+        </nav>
       </div>
 
       <div className="main">
-       
+        <Outlet />
       </div>
     </>
   );
