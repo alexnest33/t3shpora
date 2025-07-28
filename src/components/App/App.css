@@ -1,0 +1,96 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  /* min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; */
+
+}
+
+/* *,
+
+*::before,
+
+*::after {
+
+  box-sizing: border-box;
+
+} */
+
+
+
+/* .sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1d4836;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #8bda59;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: white;
+} */
+
+/* .demo-logo-vertical{
+  display:flex;
+  background-color: green;
+  justify-content: center;
+} */
+
+.main {
+  background-color: white;
+  margin-left: 10px;
+  padding-top: 0;
+  max-width: 800px;
+}
+
+/* @media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+} */
+
+/* body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+} */
+
+.knopka{
+  max-width: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.dark{
+  background-color: aqua;
+  color:red;
+}

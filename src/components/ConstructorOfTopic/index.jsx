@@ -9,7 +9,7 @@ const BlackText = styled.b`
   color: #859900;
 `;
 
-const SwitchFunc = ({ title, content }) => {
+const ConstructorOfTopic = ({ title, content }) => {
   const switchers = (content) => {
     return content.map((item) => {
       const [[tag, text]] = Object.entries(item);
@@ -79,4 +79,4 @@ const SwitchFunc = ({ title, content }) => {
   );
 };
 
-export default SwitchFunc;
+export default ConstructorOfTopic;

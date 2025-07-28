@@ -1,4 +1,4 @@
-const navigation = [
+const content = [
   {
     path: "/",
 
@@ -1795,4 +1795,4 @@ return items.map((item, index) => (
   },
 ];
 
-export default navigation;
+export default content;
