@@ -1,13 +1,10 @@
-import { Menu,Layout,theme } from "antd";
+import { Menu, Layout, theme } from "antd";
 import Sider from "antd/es/layout/Sider";
 import content from "../../utils/content";
-import Header from "../Header";
-import Content from "../Content";
-import Footer from "../Footer";
-import { NavLink, } from "react-router";
-
-
-
+import Header from "../../components/App/Header";
+import Content from "../../components/Content";
+import Footer from "../../components/Footer";
+import { NavLink } from "react-router";
 
 const siderStyle = {
   overflow: "auto",
@@ -19,7 +16,6 @@ const siderStyle = {
   scrollbarWidth: "thin",
   scrollbarGutter: "stable",
 };
-
 
 const AllPage = () => {
   const {
@@ -35,35 +31,30 @@ const AllPage = () => {
     ),
   }));
 
-
-
   return (
     <>
-
-    <Layout hasSider>
-      <Sider style={siderStyle}>
-        <div className="demo-logo-vertical">
-          <Menu
-            theme="dark"
-            mode="vertical"
-            defaultSelectedKeys={["04"]}
-            items={listSidebar}
+      <Layout hasSider>
+        <Sider style={siderStyle}>
+          <div className="demo-logo-vertical">
+            <Menu
+              theme="dark"
+              mode="vertical"
+              defaultSelectedKeys={["04"]}
+              items={listSidebar}
+            />
+          </div>
+        </Sider>
+        <Layout>
+          <Header style={{ background: colorBgContainer }} />
+          <Content
+            style={{ margin: "24px 16px 0", overflow: "initial" }}
+            colorBgContainer={colorBgContainer}
+            borderRadiusLG={borderRadiusLG}
           />
-        </div>
-      </Sider>
-      <Layout>
-      <Header style={{  background: colorBgContainer }} />
-      <Content
-        style={{ margin: "24px 16px 0", overflow: "initial" }}
-        colorBgContainer={colorBgContainer}
-        borderRadiusLG={borderRadiusLG}
-      />
-      
-          
-      <Footer style={{ padding: 24, textAlign: "center" }} />
-      </Layout>
-      </Layout>
 
+          <Footer style={{ padding: 24, textAlign: "center" }} />
+        </Layout>
+      </Layout>
     </>
   );
 };
