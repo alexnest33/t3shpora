@@ -1,7 +1,8 @@
 const Footer = () => {
   return (
     <h2>
-      SHPORA APP {new Date().getFullYear()} Created by Alexander Makhnavets
+      dasdasdasd SHPORA APP {new Date().getFullYear()} Created by Alexander
+      Makhnavets
     </h2>
   );
 };
